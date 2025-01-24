@@ -77,20 +77,20 @@ ostream& operator<<(ostream& os, const map<F, S>& v) {
 
 #define dbg(args...) do { cerr << #args << " : "; faltu(args); } while (0)
 
-void faltu() {
+void bruh() {
     cerr << endl;
 }
 
 template <typename T>
-void faltu(T a[], int n) {
+void bruh(T a[], int n) {
     for (int i = 0; i < n; ++i) cerr << a[i] << ' ';
     cerr << endl;
 }
 
 template <typename T, typename ... hello>
-void faltu(T arg, const hello &... rest) {
+void bruh(T arg, const hello &... rest) {
     cerr << arg << ' ';
-    faltu(rest...);
+    bruh(rest...);
 }
 
 // Template functions
